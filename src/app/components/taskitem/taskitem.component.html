@@ -1,0 +1,19 @@
+@for (task of taskss; track $index) {
+
+        <div >
+            <div class="border border-1">
+                <div class="d-flex justify-content-center align-items-center flex-column ">
+                    <h1>{{ task.id }}</h1>
+                    <p>{{ task.title }}</p> 
+                    <p [ngStyle]="{ color: task.completed ? 'green' : 'red' }">
+                      Status: {{ task.completed ? 'Completed' : 'Uncompleted' }}
+                    </p>
+                    <button (click)="toggleCompletion(task.id) " class="my-2">click to complete</button>
+                </div>
+        
+            </div>
+          </div>
+    }
+  
+
+  

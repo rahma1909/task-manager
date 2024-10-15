@@ -1,0 +1,24 @@
+
+
+<c-modal [keyboard]="false" [transition]="false" backdrop="static" class="position-static d-block show"
+    id="modalStatic" >
+    <c-modal-header>
+        <h5 cModalTitle>All Tasks</h5>
+
+    </c-modal-header>
+   
+    <div class="my-2">
+
+        <c-modal-body><app-taskitem></app-taskitem></c-modal-body>
+
+      
+
+    </div>
+
+  
+
+    <c-modal-footer>
+        
+        <button cButton class="btn btn-primary" (click)="showAlert()">Save changes</button>
+    </c-modal-footer>
+</c-modal>
